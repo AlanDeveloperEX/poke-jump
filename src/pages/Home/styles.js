@@ -20,10 +20,11 @@ export const Container = styled.View`
 
 export const Title = styled.Text`
   ${({ theme }) => css`
-    color: ${theme.colors.text};
-    font-size: 32px;
+    color: ${theme.colors.text_secondary};
+    font-size: 30px;
     line-height: 38px;
     font-weight: bold;
-    margin-top: -70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   `}
 `;

@@ -7,8 +7,11 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 export default function App() {
   return (
     <>
-      <StatusBar backgroundColor="transparent" translucent />
       <SafeAreaView style={{ flex: 1 }}>
+        <StatusBar
+          backgroundColor={theme.colors.background_header}
+          translucent
+        />
         <ThemeProvider theme={theme}>
           <Routes />
         </ThemeProvider>

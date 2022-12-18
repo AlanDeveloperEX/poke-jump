@@ -68,7 +68,13 @@ export function Home() {
       <S.Container>
         <Header />
         <FlatList
-          ListHeaderComponent={<>{/* <Header /> */}</>}
+          ListHeaderComponent={
+            <>
+              <S.Title>
+                More than 250 Pokemons for you to choose your favorite
+              </S.Title>
+            </>
+          }
           contentContainerStyle={{
             paddingHorizontal: 20,
           }}
