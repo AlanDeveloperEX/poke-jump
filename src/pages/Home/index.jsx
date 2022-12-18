@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Alert, FlatList } from 'react-native';
+import { Alert, FlatList, Text } from 'react-native';
 
 import { Load } from '../../components/Load';
-
-import pokeballImage from '../../assets/img/pokeball.png';
 
 import api from '../../services/api';
 
@@ -13,7 +11,7 @@ import { useNavigation } from '@react-navigation/native';
 export function Home() {
   const { navigate } = useNavigation();
 
-  const [load, setLoad] = useState < boolean > true;
+  const [load, setLoad] = useState(true);
   const [pokemons, setPokemons] = useState([]);
 
   useEffect(() => {
@@ -71,6 +69,7 @@ export function Home() {
           ListHeaderComponent={
             <>
               <S.Title>Pokédex</S.Title>
+              <Text>Test</Text>
             </>
           }
           contentContainerStyle={{
