@@ -8,8 +8,7 @@ const Stack = createStackNavigator();
 
 export function AppRoutes() {
   return (
-    // <Stack.Navigator screenOptions={{ headerShown: false }}>
-    <Stack.Navigator>
+    <Stack.Navigator screenOptions={{ headerShown: false }}>
       <Stack.Screen name="Home" component={Home} />
     </Stack.Navigator>
   );

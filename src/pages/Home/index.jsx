@@ -7,6 +7,7 @@ import api from '../../services/api';
 
 import * as S from './styles';
 import { useNavigation } from '@react-navigation/native';
+import { Header } from '../../components/Header';
 
 export function Home() {
   const { navigate } = useNavigation();
@@ -65,13 +66,9 @@ export function Home() {
   ) : (
     <>
       <S.Container>
+        <Header />
         <FlatList
-          ListHeaderComponent={
-            <>
-              <S.Title>Pokédex</S.Title>
-              <Text>Test</Text>
-            </>
-          }
+          ListHeaderComponent={<>{/* <Header /> */}</>}
           contentContainerStyle={{
             paddingHorizontal: 20,
           }}
