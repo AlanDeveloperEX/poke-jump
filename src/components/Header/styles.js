@@ -33,6 +33,6 @@ export const Title = styled.Text`
 `;
 
 export const PokemonImage = styled.Image`
-  width: 144;
-  height: 50;
+  width: 144px;
+  height: 50px;
 `;
