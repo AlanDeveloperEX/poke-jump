@@ -57,7 +57,6 @@ export const PokemonImageBackCircle = styled.View`
     width: 130px;
     height: 130px;
     border-radius: 115px;
-    /* margin: 0 auto; */
     margin-bottom: -130px;
   `}
 `;

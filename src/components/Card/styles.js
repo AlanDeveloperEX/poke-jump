@@ -70,12 +70,6 @@ export const PokemonName = styled.Text`
   `}
 `;
 
-// export const PokemonImageBackCircle = styled.View`
-//   width: 230px;
-//   height: 230px;
-//   border-radius: 50%;
-// `;
-
 export const PokemonImageBackCircle = styled.View`
   ${({ theme, type }) => css`
     background: ${theme.colors.boxType[type]};

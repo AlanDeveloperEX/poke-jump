@@ -18,7 +18,7 @@ export function Header({ backAvaiable }) {
           <AntDesign
             style={{ position: 'absolute', left: 25 }}
             name="arrowleft"
-            size={25}
+            size={30}
             color="#fff"
             onPress={navigateBack}
           />
