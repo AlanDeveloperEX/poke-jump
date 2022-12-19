@@ -1,23 +1,23 @@
-## Indice
+## Summary
 
-- [Sobre](#-sobre)
-- [Tecnologias utilizadas](#-tecnologias-utilizadas)
-- [Como baixar o projeto](#-como-baixar-o-projeto)
-- [Funcionalidades](#-Funcionalidades)
-
----
-
-## 🤔 Sobre
-
-Projeto **Poke-jump!**, projeto feito para listar os pokemons da api pokeapi.
-
-Layout baseado [Nesse projest](https://xd.adobe.com/view/e13ba731-fd76-40bf-ab3d-1b75225cc182-b468/specs/)
+- [About](#-About)
+- [Technologies](#-Technologies)
+- [Run the project](#-How-to-run)
+- [Features](#-Features)
 
 ---
 
-## 💻 Tecnologias utilizadas
+## 🤔 About
 
-O projeto foi feito utilizando das seguintes tecnologias
+Project **Poke-jump!**, the idea was list and see the poemon information from pokeapi API.
+
+Layout [this project](https://xd.adobe.com/view/e13ba731-fd76-40bf-ab3d-1b75225cc182-b468/specs/)
+
+---
+
+## 💻 Technologies
+
+The project was builded with the next technologies:
 
 - Expo
 - React Native
@@ -27,19 +27,19 @@ O projeto foi feito utilizando das seguintes tecnologias
 
 ---
 
-## 📦 Como baixar o projeto
+## 📦 How to run
 
 ```bash
-  #clonar o repositorio
+  #clone
   $ git clone git@github.com:AlanDeveloperEX/poke-jump.git
 
-  #entrar na pasta do projeto
+  #get into folder
   $ cd poke-jump
 
-  #instalar as dependencias
+  #install dependences
   $ yarn
 
-  #Basta ler o codigo de barras que aparecerá, com isso o projeto deverá abrir
+  #Read with cel's camera the QR Code
   $ expo start
 
 
@@ -47,12 +47,12 @@ O projeto foi feito utilizando das seguintes tecnologias
 
 ---
 
-## 💻 Funcionalidades
+## 💻 Features
 
-- Listagem de pokemons da api
+- List pokemons by pokeapi
 
-- Visualizar detalhes do pokemon
+- Show pokemon detais
 
-- Listar hp, attack e etc
+- List abilities, stats, status and etc
 
-Desenvolvido com ♥ por AlanDeveloperEx
+Developed with ♥ by AlanDeveloperEx
