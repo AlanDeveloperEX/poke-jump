@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Alert, FlatList, StyleSheet, Text } from 'react-native';
 import { Card } from '../../components/Card';
 import { Load } from '../../components/Load';
+import { Search } from '../../components/Search';
 import { Header } from '../../components/Header';
 import api from '../../services/api';
 import * as S from './styles';
@@ -71,6 +72,7 @@ export function Home() {
               <S.Title>
                 More than 250 Pokemons for you to choose your favorite
               </S.Title>
+              <Search />
             </>
           }
           contentContainerStyle={{
