@@ -14,7 +14,6 @@ export function About() {
   const { pokemonId } = route.params;
 
   const [pokemon, setPokemon] = useState({});
-  // const [pokemonInformation, setPokemonInformation] = useState({});
   const [load, setLoad] = useState(true);
 
   useEffect(() => {
@@ -132,7 +131,7 @@ export function About() {
                     progress={
                       attribute.base_stat >= 100
                         ? attribute.base_stat
-                        : `.${attribute.base_stat}`
+                        : '.' + attribute.base_stat
                     }
                     unfilledColor="#B7B7B8"
                     color={

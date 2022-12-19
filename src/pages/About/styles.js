@@ -5,6 +5,7 @@ import * as Progress from 'react-native-progress';
 export const LoadingScreen = styled.View`
   flex: 1;
   justify-content: center;
+  align-items: center;
 `;
 
 export const Header = styled.View`
