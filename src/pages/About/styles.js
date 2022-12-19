@@ -51,6 +51,17 @@ export const ContentImage = styled.View`
   position: relative;
 `;
 
+export const PokemonImageBackCircle = styled.View`
+  ${({ theme, type }) => css`
+    background: ${theme.colors.boxType[type]};
+    width: 130px;
+    height: 130px;
+    border-radius: 115px;
+    /* margin: 0 auto; */
+    margin-bottom: -130px;
+  `}
+`;
+
 export const PokemonImage = styled.Image`
   width: 125px;
   height: 125px;

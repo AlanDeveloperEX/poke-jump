@@ -68,6 +68,8 @@ export function About() {
             type={pokemon.types[0].type.name}
           >
             <S.ContentImage>
+              <S.PokemonImageBackCircle type={pokemon.types[0].type.name} />
+
               <S.PokemonImage
                 source={{
                   uri: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.id}.png`,

@@ -5,6 +5,7 @@ export function Card({ data, ...rest }) {
   return (
     <S.PokemonCard type={data.types[0].type.name} {...rest}>
       <S.PokemonId>#{data.id.toString().padStart(3, '0')}</S.PokemonId>
+      <S.PokemonImageBackCircle type={data.types[0].type.name} />
       <S.PokemonImage
         source={{
           uri: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png`,
