@@ -128,9 +128,20 @@ export function About() {
                   <S.ProgressBar
                     type={pokemon.types[0].type.name}
                     borderWidth={0}
-                    progress={100}
-                    width={attribute.base_stat}
-                    color={attribute.base_stat >= 50 ? '#45C0A3' : '#E63950'}
+                    width={100}
+                    progress={
+                      attribute.base_stat >= 100
+                        ? attribute.base_stat
+                        : `.${attribute.base_stat}`
+                    }
+                    unfilledColor="#B7B7B8"
+                    color={
+                      attribute.base_stat <= 50
+                        ? '#E63950'
+                        : attribute.base_stat > 100
+                        ? '#53E37E'
+                        : '#45C0A3'
+                    }
                   />
                 </S.ContentBar>
               </S.StatusBar>
