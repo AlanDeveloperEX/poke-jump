@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { Alert, FlatList, Text } from 'react-native';
-
+import { Alert, FlatList, StyleSheet, Text } from 'react-native';
+import { Card } from '../../components/Card';
 import { Load } from '../../components/Load';
-
+import { Header } from '../../components/Header';
 import api from '../../services/api';
-
 import * as S from './styles';
 import { useNavigation } from '@react-navigation/native';
-import { Header } from '../../components/Header';
 
 export function Home() {
   const { navigate } = useNavigation();
@@ -76,14 +74,31 @@ export function Home() {
             </>
           }
           contentContainerStyle={{
-            paddingHorizontal: 20,
+            paddingHorizontal: 10,
+            paddingBottom: 20,
           }}
           data={pokemons}
           keyExtractor={pokemon => pokemon.id.toString()}
           showsVerticalScrollIndicator={false}
-          renderItem={({ item: pokemon }) => <Text>{pokemon.name}</Text>}
+          numColumns={2}
+          columnWrapperStyle={style.row}
+          renderItem={({ item: pokemon }) => (
+            <Card
+              style={{ width: '45%' }}
+              data={pokemon}
+              onPress={() => {
+                handleNavigationPokemonDetail(pokemon.id);
+              }}
+            />
+          )}
         />
       </S.Container>
     </>
   );
 }
+
+const style = StyleSheet.create({
+  row: {
+    justifyContent: 'space-around',
+  },
+});

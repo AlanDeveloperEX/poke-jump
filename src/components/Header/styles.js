@@ -16,6 +16,7 @@ export const Container = styled.View`
     justify-content: center;
     align-items: center;
     max-height: 95px;
+    min-height: 95px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 
