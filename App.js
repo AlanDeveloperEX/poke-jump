@@ -11,6 +11,7 @@ export default function App() {
         <StatusBar
           backgroundColor={theme.colors.background_header}
           translucent
+          barStyle="light-content"
         />
         <ThemeProvider theme={theme}>
           <Routes />

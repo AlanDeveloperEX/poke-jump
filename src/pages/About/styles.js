@@ -39,7 +39,7 @@ export const GridInformationItemTag = styled.Text`
   ${({ theme, type }) => css`
     align-items: center;
     padding: 6px 8px;
-    background: ${theme.colors.backgroundCard[type]};
+    background: ${theme.colors.boxType[type]};
     border-radius: 20px;
     color: #fff;
     font-weight: 600

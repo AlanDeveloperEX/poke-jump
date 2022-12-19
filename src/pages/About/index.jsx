@@ -128,7 +128,7 @@ export function About() {
                     borderWidth={0}
                     progress={100}
                     width={attribute.base_stat}
-                    color={pokemon.color}
+                    color={attribute.base_stat >= 50 ? '#45C0A3' : '#E63950'}
                   />
                 </S.ContentBar>
               </S.StatusBar>
